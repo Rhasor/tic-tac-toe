@@ -1,0 +1,125 @@
+
+body {
+  
+  background-image: url("img/tictactoe-white-bg.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-header {
+  font-size: 34px;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+#dialog-description {
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+  height: 90px;
+  text-align: center;
+}
+  .description {
+    padding-bottom: 20px;
+
+  }
+  .description-button {
+    display: flex;
+    gap: 15px;
+  }
+
+#open-description-button,
+#close-description-button,
+#start,
+#close-user-dialog-button,
+#reset-game {
+  background-color: #1992d4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  width: 150px;
+}
+#open-description-button:hover,
+#close-description-button:hover,
+#start:hover,
+#close-user-dialog-button:hover,
+#reset-game:hover {
+  background-color: #3e8e41;
+}
+#game-dialog {
+  border:none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#game-grid {
+  margin: 1rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  
+}
+  .game-button {
+    font-size: 35px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(48, 47, 47); 
+    border: 1px solid #4d4e4e;
+  }
+    .game-button:nth-child(-n+3) {
+      border-top: none;
+    }
+
+    .game-button:nth-child(n+7) {
+      border-bottom: none;
+    }
+
+    .game-button:nth-child(3n+1) {
+      border-left: none;
+    }
+
+    .game-button:nth-child(3n) {
+      border-right: none;
+    }
+
+    .scores,
+    .winner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      
+    }
+    .reset-game-button {
+      display: flex;
+      flex-direction: column;
+    }
+      #reset-game {
+        align-self: center;
+      }
+#add-user-dialog {
+  border: none;
+  border-radius: 15px;
+}
+  #user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+    input {
+      border-color:#1992d4;
+      border-radius: 15px;
+      border-width: .9px;
+      height: 25px;
+      text-align: center;
+
+    }
+      ::placeholder {
+        text-align: center;
+      }
+
+    .user-button {
+      padding-top: 15px;
+    }
